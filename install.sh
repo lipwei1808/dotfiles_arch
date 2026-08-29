@@ -34,6 +34,8 @@ link_file "$repo_dir/zshrc" "$HOME/.zshrc"
 link_file "$repo_dir/vimrc" "$HOME/.vimrc"
 link_file "$repo_dir/vim" "$HOME/.vim"
 link_file "$repo_dir/gitconfig" "$HOME/.gitconfig"
+link_file "$repo_dir/tmux.conf" "$HOME/.tmux.conf"
+link_file "$repo_dir/npmrc" "$HOME/.npmrc"
 
 if [[ $backup_created == true ]]; then
   printf '\nPrevious files were saved in %s\n' "$backup_dir"

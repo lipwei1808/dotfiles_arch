@@ -8,6 +8,14 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt SHARE_HISTORY
 
+# Path
+typeset -U path PATH
+path=(
+  "$HOME/bin"
+  "$HOME/.local/share/npm/bin"
+  $path
+)
+
 # Completion
 autoload -Uz compinit
 compinit

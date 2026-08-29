@@ -1,6 +1,6 @@
 # Arch dotfiles
 
-Personal configuration for zsh, Vim, and Git on Arch Linux.
+Personal configuration for zsh, Vim, Git, tmux, and npm on Arch Linux.
 
 ## Included
 
@@ -8,6 +8,8 @@ Personal configuration for zsh, Vim, and Git on Arch Linux.
 - `vimrc` → `~/.vimrc`
 - `vim/` → `~/.vim`
 - `gitconfig` → `~/.gitconfig`
+- `tmux.conf` → `~/.tmux.conf`
+- `npmrc` → `~/.npmrc`
 
 ## Install
 
@@ -32,4 +34,5 @@ source ~/.zshrc
 - Git
 - zsh
 - Vim
-
+- tmux (optional)
+- npm (optional)
