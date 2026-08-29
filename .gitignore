@@ -1,0 +1,14 @@
+# macOS metadata
+.DS_Store
+
+# Vim-generated files
+*.swp
+*.swo
+*.swn
+*~
+.netrwhist
+
+# Zsh-generated files
+.zcompdump*
+.zsh_history
+
