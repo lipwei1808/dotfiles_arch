@@ -15,8 +15,17 @@ compinit
 # Editing
 bindkey -v
 
-# Prompt
-PROMPT='%F{green}%n@%m%f %F{blue}%~%f %# '
+# Prompt and Git branch
+autoload -Uz add-zsh-hook vcs_info
+setopt PROMPT_SUBST
+zstyle ':vcs_info:git:*' formats ' %F{yellow}(%b)%f'
+
+update_vcs_info() {
+  vcs_info
+}
+
+add-zsh-hook precmd update_vcs_info
+PROMPT='%F{green}%n@%m%f %F{blue}%~%f${vcs_info_msg_0_} %# '
 
 # Colors
 autoload -Uz colors
@@ -30,4 +39,3 @@ alias ,sz='source ~/.zshrc'
 mkcd() {
 mkdir -p -- "$1" && cd -- "$1"
 }
-
