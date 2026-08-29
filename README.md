@@ -10,6 +10,9 @@ Personal configuration for zsh, Vim, Git, tmux, and npm on Arch Linux.
 - `gitconfig` → `~/.gitconfig`
 - `tmux.conf` → `~/.tmux.conf`
 - `npmrc` → `~/.npmrc`
+- `config/hypr/` → `~/.config/hypr`
+- `config/waybar/` → `~/.config/waybar`
+- `config/rofi/` → `~/.config/rofi`
 
 ## Install
 
@@ -34,5 +37,6 @@ source ~/.zshrc
 - Git
 - zsh
 - Vim
-- tmux (optional)
-- npm (optional)
+- tmux 
+- npm 
+- Hyprland, Waybar, and Rofi 

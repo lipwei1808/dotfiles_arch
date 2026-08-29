@@ -36,8 +36,10 @@ link_file "$repo_dir/vim" "$HOME/.vim"
 link_file "$repo_dir/gitconfig" "$HOME/.gitconfig"
 link_file "$repo_dir/tmux.conf" "$HOME/.tmux.conf"
 link_file "$repo_dir/npmrc" "$HOME/.npmrc"
+link_file "$repo_dir/config/hypr" "$HOME/.config/hypr"
+link_file "$repo_dir/config/waybar" "$HOME/.config/waybar"
+link_file "$repo_dir/config/rofi" "$HOME/.config/rofi"
 
 if [[ $backup_created == true ]]; then
   printf '\nPrevious files were saved in %s\n' "$backup_dir"
 fi
-
